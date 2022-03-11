@@ -93,7 +93,7 @@
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>জাভাস্ক্রিপ্টের event loop এর উপর ভিত্তি করে একটি রানটাইম মডেল রয়েছে, যা
-                                            running code,events collecting এবং processing এবং সারিবদ্ধ সাব-টাস্কগুলি
+                                            running code,events collecting এবং processing এবং সিরিয়ালে task গুলো
                                             চালায় ।
                                         </p>
                                     </div>
@@ -126,11 +126,11 @@
                                                     <td>যেহেতু এটি session-based নয়, এটি অবশ্যই জাভাস্ক্রিপ্টের মাধ্যমে
                                                         বা ম্যানুয়ালি delete করতে হবে</td>
                                                     <td>এটি session-based এবং উইন্ডো বা ট্যাবে কাজ করে। এর মানে হল যে
-                                                        ডেটা শুধুমাত্র একটি সেশনের সময়কালের জন্য সংরক্ষণ করা হয়,
+                                                        ডেটা শুধুমাত্র একটি সেশনের পর্যন্ত সংরক্ষণ করা হয়,
                                                         অর্থাৎ, ব্রাউজার (বা ট্যাব) বন্ধ না হওয়া পর্যন্ত</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>কখনো expire হবে না</td>
+                                                    <td>কখনো expire হবে না, ব্রাউজার uninstall করার আগে পর্যন্ত </td>
                                                     <td>টেব বন্ধ করার সাথে সাথে expire হয়ে যাবে </td>
                                                 </tr>
 
